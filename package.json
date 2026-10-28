@@ -1,0 +1,23 @@
+{
+  "name": "bidora-live-auction-marketplace",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Responsive auction marketplace with real-time bidding, seller image uploads, smart search and optional Razorpay test checkout",
+  "scripts": {
+    "start": "node --disable-warning=ExperimentalWarning server.js",
+    "check": "node --check server.js && node --check public/app.js"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "helmet": "^8.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "razorpay": "^2.9.5",
+    "socket.io": "^4.8.1",
+    "multer": "^1.4.5-lts.2"
+  }
+}
